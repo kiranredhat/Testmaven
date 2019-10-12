@@ -1,0 +1,10 @@
+1) cd REPO
+2) git clone https://github.com/kiranredhat/selenium-python.git
+cd REPO/selenium-python
+
+3) After that copy project manually into cd C://REPO//selenium-python
+
+4) git add .
+4) git status
+5) git commit -m message"commiting YCC project"
+6) git push
