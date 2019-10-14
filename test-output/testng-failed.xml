@@ -3,11 +3,11 @@
 <suite guice-stage="DEVELOPMENT" name="Failed suite [Default suite]">
   <test name="Default test(failed)">
     <classes>
-      <class name="SmallPrograms.kirantest5">
+      <class name="SmallPrograms.ActionClass">
         <methods>
-          <include name="main"/>
+          <include name="psvm"/>
         </methods>
-      </class> <!-- SmallPrograms.kirantest5 -->
+      </class> <!-- SmallPrograms.ActionClass -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->
