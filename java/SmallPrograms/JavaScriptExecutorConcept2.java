@@ -26,21 +26,36 @@ System.setProperty("webdriver.chrome.driver", "F:\\Selenium\\Browser\\chromedriv
 		
 		driver.findElement(By.name("txtUsername")).sendKeys("naveenk");
 		driver.findElement(By.name("txtPassword")).sendKeys("test@1234");
-		WebElement loginBtn =driver.findElement(By.name("Submit"));
-		  JavascriptExecutor js = (JavascriptExecutor)WebDriverFactory.getdr();	
+		WebElement elmSubmit =driver.findElement(By.name("Submit"));
+//======================================================================================================================
+		  JavascriptExecutor js = (JavascriptExecutor)driver;	
+		  
+//		To Click on element
 		    js.executeScript("arguments[0].click();", elmSubmit);
-
+//-----------------------------------------------------------------------------------------------------------------------
+//		To Scroll Down Page
 			js.executeScript("window.scrollTo(0,document.body.scrollHeight)");
 			js.executeScript("arguments[0].scrollIntoView(true);", elmSubmit);
 
+//-----------------------------------------------------------------------------------------------------------------------
+//		To Refresh Page
 			js.executeScript("history.go(0)");
 
+//-----------------------------------------------------------------------------------------------------------------------
+//		To Make Button Border Red	
 			js.executeScript("arguments[0].style.border='3px solid red'", elmSubmit);
-
-
+//-----------------------------------------------------------------------------------------------------------------------
+//		To Get Title Of page.
 			String title = js.executeScript("return document.title;").toString();
 			System.out.println(title);
 
+//-----------------------------------------------------------------------------------------------------------------------		
+//		To	Open New Tab
+			  js.executeScript("window.open('http://gmail.com/','_blank');");
+			  js.executeScript("window.open('about:blank','_blank');");
+
+//-----------------------------------------------------------------------------------------------------------------------
+//		To Change Background color of element or button. 	  
 		    js.executeScript("arguments[0].style.backgroundColor = 'rgb(0,200,0)'",  elmSubmit);
 
 		    try {
@@ -48,15 +63,16 @@ System.setProperty("webdriver.chrome.driver", "F:\\Selenium\\Browser\\chromedriv
 		    }  catch (InterruptedException e) {
 		    }
 
-//			String pageText = js.executeScript("return document.documentElement.innerText;").toString();
-//			System.out.println(pageText);
+//-----------------------------------------------------------------------------------------------------------------------
+ //		 To Get Page Inner Text   
+			String pageText = js.executeScript("return document.documentElement.innerText;").toString();
+			System.out.println(pageText);
 
+//-----------------------------------------------------------------------------------------------------------------------
+//		To open alert Box	
 		    js.executeScript("alert('Welcome to Guru99');");  
 			driver.switchTo().alert().accept();
 
-		    File src = ((TakesScreenshot) driver).getScreenshotAs(OutputType.FILE);
-
-		FileUtils.copyFile(src, new File("C:\\Users\\User\\eclipse-workspace\\YtelCotactCenter\\src\\test\\java\\com\\ycc\\test\\element.png"));
 
 	}
 
