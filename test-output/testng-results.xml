@@ -2,16 +2,16 @@
 <testng-results skipped="0" failed="0" ignored="0" total="1" passed="1">
   <reporter-output>
   </reporter-output>
-  <suite name="Default suite" duration-ms="35882" started-at="2019-10-16T06:47:58Z" finished-at="2019-10-16T06:48:34Z">
+  <suite name="Default suite" duration-ms="83" started-at="2019-10-17T07:15:59Z" finished-at="2019-10-17T07:15:59Z">
     <groups>
     </groups>
-    <test name="Default test" duration-ms="35882" started-at="2019-10-16T06:47:58Z" finished-at="2019-10-16T06:48:34Z">
-      <class name="SmallPrograms.ActionClass">
-        <test-method status="PASS" signature="psvm()[pri:0, instance:SmallPrograms.ActionClass@4f7d0008]" name="psvm" duration-ms="35851" started-at="2019-10-16T12:17:59Z" finished-at="2019-10-16T12:18:34Z">
+    <test name="Default test" duration-ms="83" started-at="2019-10-17T07:15:59Z" finished-at="2019-10-17T07:15:59Z">
+      <class name="SmallPrograms.GetSystemTime">
+        <test-method status="PASS" signature="getSystemTime()[pri:0, instance:SmallPrograms.GetSystemTime@3abbfa04]" name="getSystemTime" duration-ms="39" started-at="2019-10-17T12:45:59Z" finished-at="2019-10-17T12:45:59Z">
           <reporter-output>
           </reporter-output>
-        </test-method> <!-- psvm -->
-      </class> <!-- SmallPrograms.ActionClass -->
+        </test-method> <!-- getSystemTime -->
+      </class> <!-- SmallPrograms.GetSystemTime -->
     </test> <!-- Default test -->
   </suite> <!-- Default suite -->
 </testng-results>

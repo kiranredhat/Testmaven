@@ -1,4 +1,4 @@
-package SmallPrograms;
+package Selenium;
 
 import static org.testng.Assert.expectThrows;
 

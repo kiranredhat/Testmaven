@@ -1,4 +1,4 @@
-package SmallPrograms;
+package Selenium;
 
 import javax.xml.bind.annotation.adapters.XmlJavaTypeAdapter.DEFAULT;
 

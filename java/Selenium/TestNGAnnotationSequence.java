@@ -1,4 +1,4 @@
-package SmallPrograms;
+package Selenium;
 
 import org.testng.annotations.AfterClass;
 import org.testng.annotations.AfterMethod;

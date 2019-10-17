@@ -1,4 +1,4 @@
-package SmallPrograms;
+package Selenium;
 
 public class GetCssValue {
 

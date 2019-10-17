@@ -1,4 +1,4 @@
- package SmallPrograms;
+ package Serializable;
 import static org.testng.Assert.assertEquals;
 import static org.testng.Assert.assertTrue;
 

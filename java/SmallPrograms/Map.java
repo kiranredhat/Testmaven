@@ -54,15 +54,7 @@ public class Map {
 	
 	mp.forEach((k,v)->System.out.println("Key : " + k + " Value : " + v));
 	
-	mp.forEach((k,v)->
-	{
-		System.out.println("Item : " + k + " Count : " + v);
-		if("kirankey1".equals(k))
-		{
-			System.out.println("Hello E");
-		}
-	
-	}	
+
 		
 		
 		
